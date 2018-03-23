@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LWXDetailController'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LWXDetailController.'
+  s.summary          = '快速设置一个有头视图有自定义的子控制器的详情页'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

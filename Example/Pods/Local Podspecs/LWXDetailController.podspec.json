@@ -1,0 +1,22 @@
+{
+  "name": "LWXDetailController",
+  "version": "0.1.0",
+  "summary": "A short description of LWXDetailController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/storm52/LWXDetailController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "storm52": "liuwuxiong2506@tops001.com"
+  },
+  "source": {
+    "git": "https://github.com/storm52/LWXDetailController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LWXDetailController/Classes/**/*"
+}

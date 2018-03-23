@@ -1,0 +1,6 @@
+framework module LWXDetailController {
+  umbrella header "LWXDetailController-umbrella.h"
+
+  export *
+  module * { export * }
+}
