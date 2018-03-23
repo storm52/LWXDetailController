@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LWXDetailController_Example' do
+  pod 'LWXDetailController', :path => '../'
+
+  target 'LWXDetailController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
