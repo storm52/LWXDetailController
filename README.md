@@ -7,7 +7,7 @@
 
 ![image](https://github.com/storm52/LWXDetailController/blob/master/demo.gif)
 
-##使用
+## 使用
 
 继承LWXDetailController，重写headerView，指定子控制器数组，Done~
 
@@ -29,6 +29,9 @@
 
 
 ```
+## 实现
+
+用ReactiveObjC实现，监听切换事件，并对新的UIScrollView 的offset进行监听，与本身scrollview的offset协调。如果子控制器不是可滑动的，则切换到监听本身的offset即可
 
 ## Example
 
