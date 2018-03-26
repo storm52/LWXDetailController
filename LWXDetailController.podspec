@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LWXDetailController'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '快速设置一个有头视图有自定义的子控制器的详情页'
 
 # This description is used to generate tags and improve search results.
