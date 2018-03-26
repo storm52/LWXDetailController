@@ -1,7 +1,7 @@
 {
   "name": "LWXDetailController",
   "version": "0.1.0",
-  "summary": "A short description of LWXDetailController.",
+  "summary": "快速设置一个有头视图有自定义的子控制器的详情页",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/storm52/LWXDetailController",
   "license": {
@@ -17,6 +17,17 @@
   },
   "platforms": {
     "ios": "8.0"
+  },
+  "dependencies": {
+    "ReactiveObjC": [
+      "~> 2.1.0"
+    ],
+    "YPTabBarController": [
+
+    ],
+    "Masonry": [
+
+    ]
   },
   "source_files": "LWXDetailController/Classes/**/*"
 }

@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "LWXDetailController.h"
+#import "LWXTabPageController.h"
 
 FOUNDATION_EXPORT double LWXDetailControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char LWXDetailControllerVersionString[];

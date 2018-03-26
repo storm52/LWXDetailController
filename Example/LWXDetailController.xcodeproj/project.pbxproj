@@ -15,7 +15,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* LWXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LWXAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* LWXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LWXViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,6 +22,12 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		8173C74320650BAD0032F70B /* ContentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8173C73920650BAB0032F70B /* ContentVC.xib */; };
+		8173C74420650BAD0032F70B /* CustomHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8173C73B20650BAC0032F70B /* CustomHeaderView.m */; };
+		8173C74520650BAD0032F70B /* NomalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8173C73D20650BAC0032F70B /* NomalVC.m */; };
+		8173C74620650BAD0032F70B /* MyDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8173C73E20650BAC0032F70B /* MyDetailController.m */; };
+		8173C74720650BAD0032F70B /* NomalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8173C73F20650BAC0032F70B /* NomalVC.xib */; };
+		8173C74820650BAD0032F70B /* ContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8173C74120650BAD0032F70B /* ContentVC.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +45,7 @@
 		06A43679805C59B97E5316CE /* Pods_LWXDetailController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LWXDetailController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13486F095DBAB0A2C3F967E7 /* Pods-LWXDetailController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWXDetailController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LWXDetailController_Example/Pods-LWXDetailController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		19E87844F7A6F92FC856B4C9 /* Pods-LWXDetailController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWXDetailController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWXDetailController_Example/Pods-LWXDetailController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		285ABA5D2ACC440E7ADDDFF9 /* LWXDetailController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LWXDetailController.podspec; path = ../LWXDetailController.podspec; sourceTree = "<group>"; };
+		285ABA5D2ACC440E7ADDDFF9 /* LWXDetailController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LWXDetailController.podspec; path = ../LWXDetailController.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LWXDetailController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWXDetailController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,8 +56,6 @@
 		6003F59B195388D20070C39A /* LWXDetailController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LWXDetailController-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* LWXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWXAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* LWXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWXAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* LWXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWXViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* LWXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWXViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* LWXDetailController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LWXDetailController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -60,12 +63,22 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6CD2C4F587F1713C0D821A3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6CD2C4F587F1713C0D821A3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8173C73920650BAB0032F70B /* ContentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentVC.xib; sourceTree = "<group>"; };
+		8173C73A20650BAC0032F70B /* CustomHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeaderView.h; sourceTree = "<group>"; };
+		8173C73B20650BAC0032F70B /* CustomHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeaderView.m; sourceTree = "<group>"; };
+		8173C73C20650BAC0032F70B /* MyDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDetailController.h; sourceTree = "<group>"; };
+		8173C73D20650BAC0032F70B /* NomalVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NomalVC.m; sourceTree = "<group>"; };
+		8173C73E20650BAC0032F70B /* MyDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDetailController.m; sourceTree = "<group>"; };
+		8173C73F20650BAC0032F70B /* NomalVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NomalVC.xib; sourceTree = "<group>"; };
+		8173C74020650BAD0032F70B /* ContentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentVC.h; sourceTree = "<group>"; };
+		8173C74120650BAD0032F70B /* ContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentVC.m; sourceTree = "<group>"; };
+		8173C74220650BAD0032F70B /* NomalVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NomalVC.h; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92B5127414BEEEA2ACD135E5 /* Pods_LWXDetailController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LWXDetailController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF5C5341FAB3AC0894ACDD9 /* Pods-LWXDetailController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWXDetailController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWXDetailController_Tests/Pods-LWXDetailController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EC262CF3ABCFFFB56C6EA125 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EC262CF3ABCFFFB56C6EA125 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EE7C2F366873319A8E7C6208 /* Pods-LWXDetailController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWXDetailController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LWXDetailController_Tests/Pods-LWXDetailController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,9 +147,17 @@
 			children = (
 				6003F59C195388D20070C39A /* LWXAppDelegate.h */,
 				6003F59D195388D20070C39A /* LWXAppDelegate.m */,
+				8173C74020650BAD0032F70B /* ContentVC.h */,
+				8173C74120650BAD0032F70B /* ContentVC.m */,
+				8173C73920650BAB0032F70B /* ContentVC.xib */,
+				8173C73A20650BAC0032F70B /* CustomHeaderView.h */,
+				8173C73B20650BAC0032F70B /* CustomHeaderView.m */,
+				8173C73C20650BAC0032F70B /* MyDetailController.h */,
+				8173C73E20650BAC0032F70B /* MyDetailController.m */,
+				8173C74220650BAD0032F70B /* NomalVC.h */,
+				8173C73D20650BAC0032F70B /* NomalVC.m */,
+				8173C73F20650BAC0032F70B /* NomalVC.xib */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* LWXViewController.h */,
-				6003F5A6195388D20070C39A /* LWXViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -280,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				8173C74320650BAD0032F70B /* ContentVC.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				8173C74720650BAD0032F70B /* NomalVC.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,10 +409,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LWXDetailController_Example/Pods-LWXDetailController_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LWXDetailController/LWXDetailController.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/YPTabBarController/YPTabBarController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LWXDetailController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPTabBarController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -403,8 +432,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8173C74820650BAD0032F70B /* ContentVC.m in Sources */,
+				8173C74520650BAD0032F70B /* NomalVC.m in Sources */,
+				8173C74420650BAD0032F70B /* CustomHeaderView.m in Sources */,
 				6003F59E195388D20070C39A /* LWXAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* LWXViewController.m in Sources */,
+				8173C74620650BAD0032F70B /* MyDetailController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

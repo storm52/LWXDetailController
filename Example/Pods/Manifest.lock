@@ -1,5 +1,11 @@
 PODS:
-  - LWXDetailController (0.1.0)
+  - LWXDetailController (0.1.0):
+    - Masonry
+    - ReactiveObjC (~> 2.1.0)
+    - YPTabBarController
+  - Masonry (1.1.0)
+  - ReactiveObjC (2.1.2)
+  - YPTabBarController (2.4.5)
 
 DEPENDENCIES:
   - LWXDetailController (from `../`)
@@ -9,8 +15,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LWXDetailController: 43ce6bdc4adde30a7078b0dffe2c0c626146523d
+  LWXDetailController: 619ea1b38f377537f06aafe293143a9f860850fa
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
+  YPTabBarController: 4b96499194722e4eaf157325a982466ba191c4ca
 
-PODFILE CHECKSUM: c68ecef761868cc4195ea654c0618ebb8418b296
+PODFILE CHECKSUM: c101b9a42526c4ccdb5b6014de7c1a645a8fc857
 
 COCOAPODS: 1.3.1

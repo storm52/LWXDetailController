@@ -7,12 +7,13 @@
 //
 
 #import "LWXAppDelegate.h"
+#import "MyDetailController.h"
 
 @implementation LWXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:MyDetailController.new];
     return YES;
 }
 

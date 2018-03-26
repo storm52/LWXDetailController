@@ -30,6 +30,10 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
+  s.dependency 'ReactiveObjC', '~> 2.1.0'
+  s.dependency 'YPTabBarController'
+  s.dependency 'Masonry'
+
   s.source_files = 'LWXDetailController/Classes/**/*'
   
   # s.resource_bundles = {
