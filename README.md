@@ -11,6 +11,13 @@
 
 继承LWXDetailController，重写headerView，指定子控制器数组，Done~
 
+内容控制器可滑动，实现PageScrollDelegate，返回滑动的视图
+```
+- (UIScrollView *)scrollView{
+    return self.tableView;
+}
+```
+指定头部视图
 ```
 - (UIView *)headerView {
     UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
