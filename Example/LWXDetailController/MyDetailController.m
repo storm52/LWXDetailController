@@ -22,6 +22,7 @@
     self.navigationController.navigationBar.backgroundColor = UIColor.whiteColor;
     self.title = @"详细";
     self.tabPageController.tabBar.itemTitleFont = [UIFont systemFontOfSize:15];
+    self.tabPageController.tabBar.indicatorScrollFollowContent = YES;
      [self initViewControllers];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

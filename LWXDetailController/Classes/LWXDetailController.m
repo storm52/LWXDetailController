@@ -32,11 +32,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.scrollView];
     CGSize screenSize = UIScreen.mainScreen.bounds.size;
-    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
+  
     UIView *headerView = [self headerView];
     [self.scrollView addSubview:headerView];
     if (CGRectEqualToRect(headerView.frame, CGRectZero)) {
@@ -52,36 +51,39 @@
     [self.tabPageController.view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.centerX.bottom.equalTo(self.scrollView);
         make.top.mas_equalTo(headerView.mas_bottom);
-        make.height.equalTo(self.view);
+        make.height.equalTo(self.scrollView.mas_height);
     }];
     
      @weakify(self);
     RACSignal *currentSubScrollOffset =  self.tabPageController.contentScrollSignal;
     [[currentSubScrollOffset filter:^BOOL(id  _Nullable value) {
-        BOOL canScoll =[value isKindOfClass:UIScrollView.class];
-        if (!canScoll) {//子控制器不支持滑动时，处理父容器ScrollView
-            RACSignal *scrollSignal = [self rac_signalForSelector:@selector(scrollViewDidScroll:) fromProtocol:@protocol(UIScrollViewDelegate)];
-            [[scrollSignal takeUntil:currentSubScrollOffset]  subscribeNext:^(id  _Nullable x) {
-                CGFloat  offsetY = MAX(0,self.scrollView.contentOffset.y);
-                if (offsetY>=headerView.frame.size.height) {
-                    self.scrollView.contentOffset = CGPointMake(0,headerView.frame.size.height);
-                }
-            }];
-        }
-        return canScoll;
+        return [value isKindOfClass:UIScrollView.class];
     }]  subscribeNext:^(UIScrollView *subScrollView) {
         @strongify(self);
         CGFloat  offsetY = MAX(0,self.scrollView.contentOffset.y+subScrollView.contentOffset.y);
         if (offsetY<headerView.frame.size.height) {
             subScrollView.contentOffset = CGPointZero;
         }else{
+        
+
             self.scrollView.contentOffset = CGPointMake(0,headerView.frame.size.height);
         }
     }];
 }
-//FixMe: 不知道为什么不写这个函数，上面的scrollSingal不会触发
+- (void)viewDidLayoutSubviews{
+    if (@available(iOS 11.0, *) && self.view.safeAreaInsets.bottom>0) {
+         self.scrollView.frame = self.view.safeAreaLayoutGuide.layoutFrame;
+    }else{
+        [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.view);
+        }];
+    }
+}
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-
+    CGFloat  offsetY = MAX(0,self.scrollView.contentOffset.y);
+    if (offsetY>=self.headerView.frame.size.height) {
+        self.scrollView.contentOffset = CGPointMake(0,self.headerView.frame.size.height);
+    }
 }
 - (UIScrollView *)scrollView{
     if (!_scrollView) {
