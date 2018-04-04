@@ -57,7 +57,7 @@ pod 'LWXDetailController'
 
 ## Author
 
-storm52, liuwuxiong2506@tops001.com
+storm52, storm52@qq.com
 
 ## License
 
